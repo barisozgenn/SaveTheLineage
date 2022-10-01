@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SaveTheLineage.Controllers
+namespace SaveTheLineage.Cores.Inputs
 {
     public class MouseWorldController : MonoBehaviour
     {

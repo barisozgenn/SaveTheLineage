@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-namespace SaveTheLineage.Controllers
+namespace SaveTheLineage.Cores.Inputs
 {
     public class CameraController : MonoBehaviour
     {

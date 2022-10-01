@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-namespace SaveTheLineage.Grids
+namespace SaveTheLineage.Cores.Grids
 {
     public class GridDebugObject : MonoBehaviour
     {

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using SaveTheLineage.Cores.Inputs;
+using SaveTheLineage.Units.Cores;
 using UnityEngine;
-namespace SaveTheLineage.Controllers
+namespace SaveTheLineage.Units.Selections
 {
     public class UnitSelectionController : MonoBehaviour
     {
@@ -34,7 +36,7 @@ namespace SaveTheLineage.Controllers
             {
                 if (TryHandleUnitSelection()) return;
 
-                selectedUnit.Move(targetPosition: MouseWorldController.GetPosition());
+                selectedUnit.GetUnitMoveAction().Move(targetPosition: MouseWorldController.GetPosition());
             }
         }
 

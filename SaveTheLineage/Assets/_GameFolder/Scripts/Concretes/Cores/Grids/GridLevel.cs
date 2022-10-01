@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using SaveTheLineage.Controllers;
+using SaveTheLineage.Units.Cores;
 using UnityEngine;
-namespace SaveTheLineage.Grids
+namespace SaveTheLineage.Cores.Grids
 {
     public class GridLevel : MonoBehaviour
     {

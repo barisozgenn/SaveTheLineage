@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using SaveTheLineage.Controllers;
 using SaveTheLineage.Helpers;
+using SaveTheLineage.Units.Cores;
 using UnityEngine;
 
-namespace SaveTheLineage.Visuals
+namespace SaveTheLineage.Units.Selections
 {
     public class UnitSelectionVisual : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace SaveTheLineage.Grids
+namespace SaveTheLineage.Cores.Grids
 {
     public struct GridMapPosition: System.IEquatable<GridMapPosition>
     {
@@ -43,6 +43,16 @@ namespace SaveTheLineage.Grids
         public static bool operator !=(GridMapPosition a, GridMapPosition b)//operator added for struct comparision
         {
             return !(a==b);
+        }
+
+        public static GridMapPosition operator +(GridMapPosition a, GridMapPosition b)//operator added for struct plusing
+        {
+            return new GridMapPosition(x: a._x+b._x, z: a._z+b._z);
+        }
+
+        public static GridMapPosition operator -(GridMapPosition a, GridMapPosition b)//operator added for struct minusing
+        {
+            return new GridMapPosition(x: a._x - b._x, z: a._z - b._z);
         }
     }
 }
